@@ -1,0 +1,90 @@
+<div class="container-xxl bg-white p-0">
+
+  <!-- Page Header End -->
+  <div class="container-xxl py-5 page-header position-relative mb-5">
+    <div class="container py-5">
+      <h1 class="display-2 text-white animated slideInDown mb-4">{{ course | titlecase }}</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Courses</a></li>
+          <li class="breadcrumb-item text-white active" aria-current="page">{{ course | titlecase }}</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+  <!-- Classes Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="d-flex gap-lg-5">
+        <div class="accordion w-75" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Chapter #1: Project 1: Loops, Conditionals, Variables.
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Project 1: Loops, Conditionals, Variables.</strong> Students will learn about three fundamental concepts: variables, conditionals, and loops. Variables are essential for 
+                storing and manipulating data within the program, with each variable having a name and a type that defines the type of data it can hold, such as numbers or text. Conditionals allow 
+                the program to make decisions based on certain conditions, using structures such as if, else, and else if to execute different blocks of code depending on whether a condition is true or false. 
+                Loops are powerful tools that allow actions to be repeated multiple times, with the most common loops being for, while, and do-while, which execute a block of code repeatedly until a specific condition is met. 
+                These concepts are integrated to create efficient and functional programs.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Project 2: Advanced Conditionals, Nested Loops, Functions.
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Project 2: Advanced Conditionals, Nested Loops, Functions.</strong> Students will learn to handle advanced conditionals, using logical operators (AND, OR, NOT) and combinations of conditions to make complex decisions in code. 
+                They will also explore nested loops, allowing iterations within other iterations to work with more complex data structures, such as arrays. Finally, they will focus on functions, learning to define and use reusable blocks of code that 
+                improve program modularity, readability, and maintainability. These topics will enable students to develop more sophisticated and efficient programs.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Chapter #3 Project 3: Inheritance, Advanced Loops.
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Project 3: Inheritance, Advanced Loops.</strong> Students will explore inheritance and advanced loops. Inheritance is a pillar of object-oriented programming that allows new classes to be built on top of existing classes, 
+                facilitating code reuse and the creation of class hierarchies. Advanced loops will cover more complex techniques and structures, optimizing iteration over data sets and allowing for greater flexibility and efficiency in handling repetitive operations. 
+                These advanced concepts will equip students with tools to build more robust and scalable programs.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card w-25 bg-dark">
+          <img src="/assets/img/app_development.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-white mb-3">Acerca de este curso</h5>
+            <div class="d-flex gap-2 align-items-center mb-2">
+              <i class="fa-solid fa-file"></i>
+              <div class="text-white">159 lecciones</div>
+            </div>
+            <div class="d-flex gap-2 align-items-center mb-2">
+              <i class="fa-solid fa-video"></i>
+              <div class="text-white">18.5 horas de contenido de video</div>
+            </div>
+            <div class="d-flex gap-2 align-items-center mb-4">
+              <i class="fa-solid fa-ticket"></i>
+              <div class="text-white">USD 30</div>
+            </div>
+            <a class="btn btn-primary w-100" (click)="buyCourse()">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
